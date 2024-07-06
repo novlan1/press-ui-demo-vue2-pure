@@ -18,6 +18,6 @@ tests/**/coverage/
 *.sln
 
 
-src/pages/
-src/packages/
-src/utils/
+# src/pages/
+# src/packages/
+# src/utils/
