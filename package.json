@@ -11,7 +11,7 @@
   "homepage": "https://novlan1.github.io/press-ui-demo-vue2-pure",
   "scripts": {
     "dev": "vue-cli-service serve --serving",
-    "build": "npm run press:init && npm run build:pure",
+    "build": "npm run build:pure",
     "build:pure": "vue-cli-service build",
     "build:dev": "npm run press:init && PUBLISH_ENV=test vue-cli-service build",
     "preview": "node build/index.js --preview",
