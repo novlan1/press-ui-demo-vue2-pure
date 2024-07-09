@@ -12,14 +12,6 @@ const getPressPages = (name = 'press') => ({
         title: 'Press UI Pure',
       },
     },
-    {
-      path: 'share/share',
-      component: () => import('src/pages/share/share.vue'),
-      meta: {
-        showBack: true,
-        title: 'Share',
-      },
-    },
     ...getPressUIPages(),
   ],
 });
