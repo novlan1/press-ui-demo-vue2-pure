@@ -10,13 +10,14 @@
 </template>
 
 <script>
+import { setLang } from 'src/utils/i18n/i18n';
 
 export default {
   data() {
     return {};
   },
   mounted() {
-
+    setLang();
   },
 };
 </script>

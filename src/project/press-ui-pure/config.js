@@ -1,5 +1,4 @@
 const config = {
-
   game: {
     gid: 0,
     name: '',
