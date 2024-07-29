@@ -14,6 +14,8 @@ module.exports = merge(getWebpackBaseConfig({
   useXSS: false,
   isUseVueLoader: false,
   lessAlias: true,
+  https: false,
+  port: '6001',
   // handleIfDefFiles: /(press-ui|component).*(\.vue|\.ts|\.js|\.css|\.scss)$/,
 }), {
   productionSourceMap: true,
