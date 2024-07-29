@@ -45,6 +45,7 @@
     "src/**/*.nvue",
     "./**/*.spec.ts",
     "log/",
-    "lib/"
+    "lib/",
+    "src/press-ui/packages/swiper-next/**/*.ts"
   ]
 }

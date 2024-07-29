@@ -57,7 +57,6 @@
     "qs": "^6.11.0",
     "safe-area-insets": "^1.4.1",
     "swiper": "^11.0.4",
-    "swiper-next": "^0.1.1",
     "t-comm": "latest",
     "tim-js-sdk": "^2.27.5",
     "tim-wx-sdk": "^2.27.5",
