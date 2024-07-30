@@ -56,7 +56,7 @@ specifiers:
   path-browserify: ^1.0.1
   path-to-regexp: 2.4.0
   plugin-light: ^1.3.12
-  press-ui: ^2.0.19
+  press-ui: ^2.0.20
   qrcode: ^1.4.4
   qs: ^6.11.0
   safe-area-insets: ^1.4.1
@@ -112,12 +112,12 @@ dependencies:
   path-browserify: 1.0.1
   path-to-regexp: 2.4.0
   plugin-light: 1.3.12_2laxijg42xtl6sks2r26ofb4mu
-  press-ui: 2.0.19
+  press-ui: 2.0.20
   qrcode: 1.5.3
   qs: 6.12.2
   safe-area-insets: 1.4.1
   swiper: 11.1.4
-  t-comm: 1.3.90
+  t-comm: 1.3.94
   tim-js-sdk: 2.27.6
   tim-wx-sdk: 2.27.6
   uni-simple-router: 2.0.8-beta.4
@@ -14225,7 +14225,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5_html-webpack-plugin@4.5.2
-      t-comm: 1.3.90
+      t-comm: 1.3.94
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.17.6
       unplugin-vue-components: 0.22.12_vue@2.6.10
@@ -14822,18 +14822,18 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.90
+      t-comm: 1.3.94
     transitivePeerDependencies:
       - canvas
       - debug
     dev: false
 
-  /press-ui/2.0.19:
-    resolution: {integrity: sha512-KuhIYhBGyuBu5g613K0x3vPo+LE6T/G1yY2yzvRrf82qsGid2sLErKYk87TqM/INQICJwy4WcL3zOTDI7a/0iw==}
+  /press-ui/2.0.20:
+    resolution: {integrity: sha512-8oVCkGA8hLrmw+MHPR2HWMVTJ5jC/QrNHb4T0i8UB34eAtMzOBQAMNOFNevSSZyX8dfupVDPSUpYj0/SiIySew==}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.90
+      t-comm: 1.3.94
     transitivePeerDependencies:
       - canvas
       - debug
@@ -16902,8 +16902,8 @@ packages:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
     dev: false
 
-  /t-comm/1.3.90:
-    resolution: {integrity: sha512-WZD1tdddI+jQUn+eBagHmAliwkkFWMA0KZHrwXHQ7Gm7rM2Gxu8IRKvbi0mm5gC40/ZJ0SyNySYtLLZUkBAE9w==}
+  /t-comm/1.3.94:
+    resolution: {integrity: sha512-D0Cw9GpT50qHzTHn8Ot2XRi6HRWDwp7iPPhWDdsPxNp/UGLaPs9Hdl9k9qFnlsfsNCgggPSqSemT8PYUKcKVrA==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1
