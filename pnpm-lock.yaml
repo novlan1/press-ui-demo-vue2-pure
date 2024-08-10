@@ -56,7 +56,7 @@ specifiers:
   path-browserify: ^1.0.1
   path-to-regexp: 2.4.0
   plugin-light: ^1.3.12
-  press-ui: ^2.1.2
+  press-ui: ^2.1.5
   qrcode: ^1.4.4
   qs: ^6.11.0
   safe-area-insets: ^1.4.1
@@ -112,7 +112,7 @@ dependencies:
   path-browserify: 1.0.1
   path-to-regexp: 2.4.0
   plugin-light: 1.3.12_2laxijg42xtl6sks2r26ofb4mu
-  press-ui: 2.1.2
+  press-ui: 2.1.5
   qrcode: 1.5.3
   qs: 6.12.2
   safe-area-insets: 1.4.1
@@ -11010,7 +11010,7 @@ packages:
       which-typed-array: 1.1.15
 
   /is-typedarray/1.0.0:
-    resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
+    resolution: {integrity: sha512-cyA56iCMHAh5CdzjJIa4aohJyeO1YbwLi3Jc35MmRU6poroFjIGZzUzupGiRPOjgHg9TLu43xbpwXk523fMxKA==}
 
   /is-unc-path/1.0.0:
     resolution: {integrity: sha512-mrGpVd0fs7WWLfVsStvgF6iEJnbjDFZh9/emhRDcGWTduTfNHd9CHeUwH3gYIjdbwo4On6hunkztwOaAw0yllQ==}
@@ -14828,8 +14828,8 @@ packages:
       - debug
     dev: false
 
-  /press-ui/2.1.2:
-    resolution: {integrity: sha512-yNeZ6Y/3dH6+5n9ME6aDeFY0ZhnNdx1uXJeGaCiZBBlgQG+lKDUcJvWj+vuqCSU85xzHLMmZ28/XzwNqdASrWg==}
+  /press-ui/2.1.5:
+    resolution: {integrity: sha512-My/5aGze5y5utiO3pNGDEm7Be7qVswGaaDtzswb4dcSzSP/j+B15Yz7OhBvFSewh0Q8OzJ/T3P6BRv9tSDoR7w==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
