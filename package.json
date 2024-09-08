@@ -1,6 +1,6 @@
 {
   "name": "press-ui-demo-vue2-pure",
-  "version": "2.1.13",
+  "version": "2.1.16",
   "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
   "repository": {
@@ -52,12 +52,12 @@
     "path-browserify": "^1.0.1",
     "path-to-regexp": "2.4.0",
     "plugin-light": "^1.3.12",
-    "press-ui": "^2.1.13",
+    "press-ui": "^2.1.16",
     "qrcode": "^1.4.4",
     "qs": "^6.11.0",
     "safe-area-insets": "^1.4.1",
     "swiper": "^11.0.4",
-    "t-comm": "latest",
+    "t-comm": "^1.3.101",
     "tim-js-sdk": "^2.27.5",
     "tim-wx-sdk": "^2.27.5",
     "uni-simple-router": "^2.0.8-beta.4",
