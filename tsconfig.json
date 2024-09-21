@@ -46,6 +46,8 @@
     "./**/*.spec.ts",
     "log/",
     "lib/",
-    "src/press-ui/packages/swiper-next/**/*.ts"
+    "src/press-ui/packages/swiper-next/**/*.ts",
+    "src/press-ui/packages/press-ui-vue3-pure/**/*.ts",
+    "src/press-ui/packages/press-ui-vue3-pure/*.ts"
   ]
 }

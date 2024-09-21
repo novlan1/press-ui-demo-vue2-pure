@@ -1,11 +1,9 @@
 'use strict';
 const { merge } = require('webpack-merge');
-const { getWebpackBaseConfig } = require('plugin-light/lib/webpack-base-config');
-const { GenVersionWebPlugin } = require('plugin-light/lib/plugin');
+const { getWebpackBaseConfig } = require('@plugin-light/project-config-vue');
+const { GenVersionWebPlugin } = require('@plugin-light/webpack-plugin-gen-version');
 const { BUILD_NAME_MAP  } = require('t-comm/lib/v-console/config');
 
-// const LOADER_IFDEF = 'plugin-light/lib/loader/ifdef-loader';
-// const INJECT_DYNAMIC_STYLE_WEB = 'plugin-light/lib/loader/inject-dynamic-style-web';
 
 process.env.UNI_PLATFORM = 'h5';
 
