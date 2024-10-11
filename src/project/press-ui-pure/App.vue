@@ -17,13 +17,14 @@ export default {
     return {};
   },
   mounted() {
+    document.documentElement.style.setProperty('--window-top', '44px');
     setLang();
   },
 };
 </script>
 <style lang="scss" src="src/utils/style/demo.scss"></style>
 <style>
-html {
+/* html {
   --window-top: 44px;
-}
+} */
 </style>

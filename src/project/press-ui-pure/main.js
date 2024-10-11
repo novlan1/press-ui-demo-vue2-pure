@@ -9,9 +9,9 @@ import routerMap from './router';
 import config from './config.js';
 import { projectMixins } from './mixins/projectMixins.js';
 
-import { initDemoI18n } from 'src/packages/locale/demo-lang';
+import { initDemoI18n } from 'press-ui/locale/demo-lang';
 import { initPureDemoMixin } from 'src/utils/mixin/pure-mixin';
-import { initPureAdapter } from 'src/packages/common/pure/adapter';
+import { initPureAdapter } from 'press-ui/common/pure/adapter';
 
 
 const beforeStart = function () {};
