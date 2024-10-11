@@ -58,7 +58,7 @@ specifiers:
   path-browserify: ^1.0.1
   path-to-regexp: 2.4.0
   plugin-light: ^1.3.12
-  press-ui: ^2.1.22
+  press-ui: ^2.1.31
   qrcode: ^1.4.4
   qs: ^6.11.0
   safe-area-insets: ^1.4.1
@@ -68,7 +68,7 @@ specifiers:
   stylelint: ^13.13.1
   stylelint-config-common: ^1.0.7
   swiper: ^11.0.4
-  t-comm: ^1.3.101
+  t-comm: ^1.3.106
   tim-js-sdk: ^2.27.5
   tim-wx-sdk: ^2.27.5
   tmpl: ^1.0.5
@@ -114,12 +114,12 @@ dependencies:
   path-browserify: 1.0.1
   path-to-regexp: 2.4.0
   plugin-light: 1.3.12_2laxijg42xtl6sks2r26ofb4mu
-  press-ui: 2.1.22
+  press-ui: 2.1.31
   qrcode: 1.5.3
   qs: 6.12.2
   safe-area-insets: 1.4.1
   swiper: 11.1.4
-  t-comm: 1.3.101
+  t-comm: 1.3.106
   tim-js-sdk: 2.27.6
   tim-wx-sdk: 2.27.6
   uni-simple-router: 2.0.8-beta.4
@@ -2790,7 +2790,7 @@ packages:
       '@plugin-light/webpack-plugin-modify-html': 0.0.4
       filemanager-webpack-plugin: 2.0.5
       prerender-spa-plugin: 3.4.0
-      t-comm: 1.3.104
+      t-comm: 1.3.106
       webpack-bundle-analyzer: 3.9.0
       webpack-hooks-shellscripts: 1.0.2
       workbox-webpack-plugin: 6.6.0
@@ -2821,7 +2821,7 @@ packages:
   /@plugin-light/shared/0.0.11:
     resolution: {integrity: sha512-6MLWFJypBAQEORej387EQdmG4b6kqHPlOpUguH8bS3gu0E2KzQtIQ7cJXjtvu58mPXtZHnSwlCdqSeU4/7eHQg==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -2833,7 +2833,7 @@ packages:
       '@plugin-light/shared': 0.0.11
       '@plugin-light/shared-vue2': 0.0.6_br2xmzps53c3ygo4s2v44biria
       loader-utils: 2.0.4
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -2869,7 +2869,7 @@ packages:
     resolution: {integrity: sha512-A79OLZus/nqZwEj5YGT1HNnk/NpvU4GdQMjN1VnZCCHxTvssFu878/6k/+viR0gs/PKgcAemCgJzvz2Gfh7APg==}
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -2879,7 +2879,7 @@ packages:
     resolution: {integrity: sha512-EzatEosngEBQZ2Q+mFRLntxgXUskGAft76nDhz7lAPp2N9MzWbnwZrvmcl7XqUaubbgr8TdnMo9FG47SRgWJQw==}
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -2889,7 +2889,7 @@ packages:
     resolution: {integrity: sha512-9K94EZjfocKA3bAHljnC+rmERLZFqtZyjg5OPrcaFhyvGWHE9Fq0dcx+WHeEmlkQmYIsSmmhC63dWZkvdDxKZg==}
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -5077,7 +5077,7 @@ packages:
     dev: true
 
   /array-ify/1.0.0:
-    resolution: {integrity: sha1-nlKHYrSpBmrRY6aWKjZEGOlibs4=}
+    resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
 
   /array-includes/3.1.8:
     resolution: {integrity: sha512-itaWrbYbqpGXkGhZPGUulwnhVf5Hpy1xiCFsGqyIGglbBxmG5vSjxQen3/WGOjPpNEv1RtBLKxbmVXm8HpJStQ==}
@@ -10073,7 +10073,7 @@ packages:
     dev: true
 
   /har-schema/2.0.0:
-    resolution: {integrity: sha1-qUwiJOvKwEeCoNkDVSHyRzW37JI=}
+    resolution: {integrity: sha512-Oqluz6zhGX8cyRaTQlFMPw80bSJVG2x/cFb8ZPhUILGgHka9SsokCCOQgpveePerqidZOrT14ipqfJb7ILcW5Q==}
     engines: {node: '>=4'}
 
   /har-validator/5.1.5:
@@ -11118,7 +11118,7 @@ packages:
       which-typed-array: 1.1.15
 
   /is-typedarray/1.0.0:
-    resolution: {integrity: sha512-cyA56iCMHAh5CdzjJIa4aohJyeO1YbwLi3Jc35MmRU6poroFjIGZzUzupGiRPOjgHg9TLu43xbpwXk523fMxKA==}
+    resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
 
   /is-unc-path/1.0.0:
     resolution: {integrity: sha512-mrGpVd0fs7WWLfVsStvgF6iEJnbjDFZh9/emhRDcGWTduTfNHd9CHeUwH3gYIjdbwo4On6hunkztwOaAw0yllQ==}
@@ -14323,7 +14323,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5_html-webpack-plugin@4.5.2
-      t-comm: 1.3.101
+      t-comm: 1.3.106
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.17.6
       unplugin-vue-components: 0.22.12_vue@2.6.10
@@ -14919,19 +14919,19 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
     dev: false
 
-  /press-ui/2.1.22:
-    resolution: {integrity: sha512-78QXARqgUBIJ+aBgUfDLvcudQ3yt0cizDBVTQb3tgyt1YCbxnXrvaX1CxFF4EW7P4nB1sMKnVl14+uB0US6EhA==}
+  /press-ui/2.1.31:
+    resolution: {integrity: sha512-rOgyjfswysze7RSIKIKDBqVDj64qax/+Vrv3R3h+FjzPhbgh4mWnD6q9ZZKmXc47pFd73IOf9o4zpMBA9e8EQQ==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -16988,27 +16988,8 @@ packages:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
     dev: false
 
-  /t-comm/1.3.101:
-    resolution: {integrity: sha512-G10OSVS2dL22eYlYfX5h+tIxjRZ0r0wNpnMUepykm/SV9pL8PBzTP4C9AXChPqQxQ2sSdWG+mIqGz+v6idUaHA==}
-    hasBin: true
-    peerDependencies:
-      canvas: ^2.6.1
-    dependencies:
-      '@babel/runtime': 7.24.7
-      '@commitlint/config-conventional': 17.8.1
-      axios: 0.21.4
-      cheerio: 1.0.0-rc.12
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.12.2
-      request: 2.88.2
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
-  /t-comm/1.3.104:
-    resolution: {integrity: sha512-0vlO9qOqoYgt/WozF/pxcfDM5lLLxnLkBXBuLrMk6AZ44D6xsxXgAyLAi/xWTAUWbUcFv9SX7Gsx7BN+a7L7zg==}
+  /t-comm/1.3.106:
+    resolution: {integrity: sha512-lSAJSgj+Lq5AqDjTOHqPexmpqOMs3GQFTNbIs1UI9rULEip3SAB/4ftqjC2v/MUI6eIXkEnkltaDQNcuj9RepQ==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1
