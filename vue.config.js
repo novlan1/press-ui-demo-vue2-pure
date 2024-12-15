@@ -17,6 +17,16 @@ module.exports = merge(getWebpackBaseConfig({
   // handleIfDefFiles: /(press-ui|component).*(\.vue|\.ts|\.js|\.css|\.scss)$/,
 }), {
   productionSourceMap: true,
+  css: {
+    // loaderOptions: {
+    //   scss: {
+    //     sassOptions: {
+    //       silenceDeprecations: ['import', 'legacy-js-api'],
+    //       quietDeps: true,
+    //     },
+    //   },
+    // },
+  },
   transpileDependencies: ['press-ui', '@zebra-ui/swiper'],
   chainWebpack: (config) => {
     if (process.env.NODE_ENV === 'production') {
