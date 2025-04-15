@@ -1,35 +1,39 @@
 {
   "name": "press-ui-demo-vue2-pure",
-  "version": "3.0.3",
+  "version": "3.0.6",
   "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
+  "homepage": "https://novlan1.github.io/press-ui-demo-vue2-pure",
   "repository": {
     "type": "git",
     "url": "https://github.com/novlan1/press-ui-demo-vue2-pure"
   },
-  "author": "guowangyang",
-  "homepage": "https://novlan1.github.io/press-ui-demo-vue2-pure",
+  "author": "novlan1",
   "scripts": {
-    "dev": "vue-cli-service serve --serving",
+    "analyze": "NODE_ENV=production npm_config_report=true npm run build",
     "build": "npm run build:pure",
-    "build:pure": "vue-cli-service build",
     "build:dev": "npm run press:init && PUBLISH_ENV=test vue-cli-service build",
+    "build:pure": "vue-cli-service build",
+    "deploy:mine": "node script/deploy/deploy-mine",
+    "dev": "vue-cli-service serve --serving",
+    "init": "npm run press:init",
+    "init:env": "node script/env/rainbow-env",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint:css": "stylelint --fix src/**/*.css",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue .",
+    "press:init": "node script/watch/init",
     "preview": "node build/index.js --preview",
-    "test:unit": "jest --clearCache && vue-cli-service test:unit",
-    "test:ci": "npm run lint && npm run test:unit",
-    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
     "publish": "light-cli publish",
     "publish:prod": "light-cli publish -e prod",
-    "analyze": "NODE_ENV=production npm_config_report=true npm run build",
-    "lint": "eslint --ext .js,.ts,.vue .",
-    "lint:fix": "eslint --fix --ext .js,.ts,.vue .",
-    "lint:css": "stylelint --fix src/**/*.css",
-    "press:init": "node script/watch/init",
-    "init": "npm run press:init",
-    "deploy:mine": "node script/deploy/deploy-mine",
-    "watch": "node script/watch/watch",
-    "init:env": "node script/env/rainbow-env"
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "test:ci": "npm run lint && npm run test:unit",
+    "test:unit": "jest --clearCache && vue-cli-service test:unit",
+    "watch": "node script/watch/watch"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@types/node": "14.6.0",
@@ -52,12 +56,12 @@
     "path-browserify": "^1.0.1",
     "path-to-regexp": "2.4.0",
     "plugin-light": "^1.3.12",
-    "press-ui": "3.0.3",
+    "press-ui": "3.0.6",
     "qrcode": "^1.4.4",
     "qs": "^6.11.0",
     "safe-area-insets": "^1.4.1",
     "swiper": "^11.0.4",
-    "t-comm": "^1.3.106",
+    "t-comm": "^1.5.14",
     "tim-js-sdk": "^2.27.5",
     "tim-wx-sdk": "^2.27.5",
     "tinycolor2": "^1.6.0",
@@ -131,9 +135,5 @@
   "engines": {
     "node": ">=8.9",
     "npm": ">= 3.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  }
 }

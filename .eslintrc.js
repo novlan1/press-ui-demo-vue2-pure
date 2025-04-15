@@ -10,7 +10,7 @@ module.exports = {
       alias: {
         map: [
           // 这里参照webpack的别名配置映射
-          ['src', './packages/press-ui/src'],
+          ['src', './src'],
         ],
         // 告诉resolver-alias有哪些后缀的文件要解析
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.vue'],

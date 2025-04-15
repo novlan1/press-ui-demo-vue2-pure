@@ -1,5 +1,5 @@
 const { execCommand } = require('t-comm');
-const { initWithPressUI } = require('../../src/press-ui/packages/press-ui/script/watch/init');
+const { initWithPressUI } = require('../../src/press-ui/script/watch/init');
 
 
 function main() {
