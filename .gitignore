@@ -19,5 +19,5 @@ tests/**/coverage/
 
 
 # src/pages/
-# src/packages/
+src/packages/
 # src/utils/

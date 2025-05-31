@@ -4,8 +4,9 @@ const { initWithPressUI } = require('../../src/press-ui/script/watch/init');
 
 function main() {
   initWithPressUI([
-  'pages',
-  'utils',
+    'packages',
+    'pages',
+    'utils',
   ]);
   execCommand('rm -rf src/packages/press-hor-swiper-light', process.cwd(), 'inherit');
 
