@@ -9,7 +9,7 @@ const getPressPages = (name = 'press') => ({
       component: () => import('src/pages/index/index.vue'),
       meta: {
         showBack: false,
-        title: 'Press UI Pure',
+        title: 'Press UI Vue2 Pure',
       },
     },
     ...getPressUIPages(),
