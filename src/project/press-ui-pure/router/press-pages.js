@@ -28,7 +28,7 @@ export function getPressUIPages() {
             title: TitleMap['zh-CN']?.[componentName],
             hideNavigator: navigationStyle === 'custom',
           },
-          component: () => import(`src/packages/press-${componentName}/demo.vue`),
+          component: () => import(`src/pages/press/${componentName}/${componentName}.vue`),
         });
       }
       return ac;

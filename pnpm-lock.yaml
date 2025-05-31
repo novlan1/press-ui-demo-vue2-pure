@@ -72,8 +72,8 @@ importers:
         specifier: ^1.3.12
         version: 1.3.20(@babel/parser@7.26.2)(@types/babel__core@7.20.5)(@types/node@14.6.0)(html-webpack-plugin@4.5.2(webpack@4.47.0))(jest@29.7.0(@types/node@14.6.0))(rollup@2.79.2)(sass@1.46.0)(sugarss@2.0.0)(terser@5.36.0)(typescript@3.9.10)(vue-template-compiler@2.6.10)(vue@2.6.10)(webpack@4.47.0)
       press-ui:
-        specifier: 3.0.13
-        version: 3.0.13
+        specifier: 3.0.17
+        version: 3.0.17
       qrcode:
         specifier: ^1.4.4
         version: 1.5.4
@@ -87,8 +87,8 @@ importers:
         specifier: ^11.0.4
         version: 11.1.15
       t-comm:
-        specifier: ^1.5.14
-        version: 1.5.14
+        specifier: ^1.5.28
+        version: 1.5.28
       tim-js-sdk:
         specifier: ^2.27.5
         version: 2.27.6
@@ -249,6 +249,24 @@ importers:
       miniprogram-api-typings:
         specifier: ^3.12.1
         version: 3.12.3
+      postcss:
+        specifier: 7.0.39
+        version: 7.0.39
+      postcss-comment:
+        specifier: ^2.0.0
+        version: 2.0.0
+      postcss-html:
+        specifier: 1.6.0
+        version: 1.6.0
+      postcss-import:
+        specifier: ^16.1.0
+        version: 16.1.0(postcss@7.0.39)
+      postcss-loader:
+        specifier: ~3.0.0
+        version: 3.0.0
+      postcss-scss:
+        specifier: 3.0.5
+        version: 3.0.5
       sass:
         specifier: 1.46.0
         version: 1.46.0
@@ -4318,7 +4336,7 @@ packages:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
 
   domutils@3.1.0:
-    resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==, tarball: https://mirrors.cloud.tencent.com/npm/domutils/-/domutils-3.1.0.tgz}
+    resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
 
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
@@ -5131,7 +5149,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -5151,6 +5169,7 @@ packages:
   gauge@3.0.2:
     resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer supported.
 
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
@@ -5547,8 +5566,11 @@ packages:
   htmlparser2@6.1.0:
     resolution: {integrity: sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==}
 
+  htmlparser2@8.0.2:
+    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+
   htmlparser2@9.1.0:
-    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==, tarball: https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-9.1.0.tgz}
+    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
 
   http-deceiver@1.2.7:
     resolution: {integrity: sha512-LmpOGxTfbpgtGVxJrj5k7asXHCgNZp5nLfp+hWc8QQRqtb7fUy6kRY3BO1h9ddF6yIPYUARgxGOwB42DnxIaNw==}
@@ -6496,6 +6518,9 @@ packages:
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+
+  js-tokens@8.0.3:
+    resolution: {integrity: sha512-UfJMcSJc+SEXEl9lH/VLHSZbThQyLpw1vLO1Lb+j4RWDvG3N2f7yj3PVQA3cmkTBNldJ9eFnM+xEXxHIXrYiJw==}
 
   js-tokens@9.0.0:
     resolution: {integrity: sha512-WriZw1luRMlmV3LGJaR6QOJjWwgLUTf89OwT2lUOyjX2dJGBwgmIkbcz+7WFZjrZM635JOIR517++e/67CP9dQ==}
@@ -7746,6 +7771,9 @@ packages:
     resolution: {integrity: sha512-WyQFAdDZpExQh32j0U0feWisZ0dmOtPl44qYmJKkq9xFWY3p+4qnRzCHeNrkeRhwPHz9bQ3mo0/yVkaply0MNw==}
     engines: {node: '>=6.9.0'}
 
+  postcss-comment@2.0.0:
+    resolution: {integrity: sha512-5zT5iKU7c0tK9KJFNrVf+g1MGTkzf/4V3e0Zzm2g1uoFQC5jeTHmB9O1iAqh97+jnKpc6al204e0pwFUiCwseg==}
+
   postcss-convert-values@4.0.1:
     resolution: {integrity: sha512-Kisdo1y77KUC0Jmn0OXU/COOJbzM8cImvw1ZFsBgBgMgb1iL23Zs/LXRe3r+EZqM3vGYKdQ2YJVQ5VkJI+zEJQ==}
     engines: {node: '>=6.9.0'}
@@ -7771,6 +7799,16 @@ packages:
     peerDependencies:
       postcss: '>=5.0.0'
       postcss-syntax: '>=0.36.0'
+
+  postcss-html@1.6.0:
+    resolution: {integrity: sha512-OWgQ9/Pe23MnNJC0PL4uZp8k0EDaUvqpJFSiwFxOLClAhmD7UEisyhO3x5hVsD4xFrjReVTXydlrMes45dJ71w==}
+    engines: {node: ^12 || >=14}
+
+  postcss-import@16.1.0:
+    resolution: {integrity: sha512-7hsAZ4xGXl4MW+OKEWCnF6T5jqBw80/EE9aXg1r2yyn1RsVEU8EtKXbijEODa+rg7iih4bKf7vlvTGYR4CnPNg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      postcss: ^8.0.0
 
   postcss-less@3.1.4:
     resolution: {integrity: sha512-7TvleQWNM2QLcHqvudt3VYjULVB49uiW6XzEUFmvwHzvsOEF5MwBrIXZDJQvJNFGjJQTzSzZnDoCJ8h/ljyGXA==}
@@ -7886,12 +7924,22 @@ packages:
     resolution: {integrity: sha512-Uw6ekxSWNLCPesSv/cmqf2bY/77z11O7jZGPax3ycZMFU/oi2DMH9i89AdHc1tRwFg/arFoEwX0IS3LCUxJh1g==}
     engines: {node: '>=6.0.0'}
 
+  postcss-safe-parser@6.0.0:
+    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.3.3
+
   postcss-sass@0.4.4:
     resolution: {integrity: sha512-BYxnVYx4mQooOhr+zer0qWbSPYnarAy8ZT7hAQtbxtgVf8gy+LSLT/hHGe35h14/pZDTw1DsxdbrwxBN++H+fg==}
 
   postcss-scss@2.1.1:
     resolution: {integrity: sha512-jQmGnj0hSGLd9RscFw9LyuSVAa5Bl1/KBPqG1NQw9w8ND55nY4ZEsdlVuYJvLPpV+y0nwTV5v/4rHPzZRihQbA==}
     engines: {node: '>=6.0.0'}
+
+  postcss-scss@3.0.5:
+    resolution: {integrity: sha512-3e0qYk87eczfzg5P73ZVuuxEGCBfatRhPze6KrSaIbEKVtmnFI1RYp1Fv+AyZi+w8kcNRSPeNX6ap4b65zEkiA==}
+    engines: {node: '>=10.0'}
 
   postcss-selector-parser@3.1.2:
     resolution: {integrity: sha512-h7fJ/5uWuRVyOtkO45pnt1Ih40CEleeyCHzipqAZO2e5H20g25Y48uYnFUiShvY4rZWNJ/Bib/KVPmanaCtOhA==}
@@ -7944,6 +7992,10 @@ packages:
     resolution: {integrity: sha512-zrUjRRe1bpXKsX1qAJNJjqZViErVuyEkMTRrwu4ud4sbTtIBRmtaYDrHmcGgmrbsW3MHfmtIf+vJumgQn+PrXg==}
     engines: {node: '>=0.12'}
 
+  postcss@6.0.23:
+    resolution: {integrity: sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==}
+    engines: {node: '>=4.0.0'}
+
   postcss@7.0.39:
     resolution: {integrity: sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==}
     engines: {node: '>=6.0.0'}
@@ -7993,8 +8045,8 @@ packages:
   press-ui@1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
 
-  press-ui@3.0.13:
-    resolution: {integrity: sha512-QD0hX7Y3i1tVlBDkZAljyvA0bL435Im6+t4Jk6d1ihnBGVUtiF24m9wFZjkRVmDmtBUehS0H9Tk0f/oE4yjDBQ==}
+  press-ui@3.0.17:
+    resolution: {integrity: sha512-i4eCxQrd//1sUB8Io1yXQ48n7vXJtH4Dnq4U3PvS7KxtWDdi4xkU+XbH5l7cso1ybZLiOujAs/fhP+SDBvRSGQ==}
     engines: {node: '>=14'}
 
   prettier@2.8.8:
@@ -8167,6 +8219,9 @@ packages:
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
+
+  read-cache@1.0.0:
+    resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
 
   read-pkg-up@1.0.1:
     resolution: {integrity: sha512-WD9MTlNtI55IwYUS27iHh9tK3YoIVhxis8yKhLpTqWtml739uXc9NWTpxoHkfZf3+DkCCsXox94/VWZniuZm6A==}
@@ -9120,18 +9175,6 @@ packages:
 
   systemjs@6.15.1:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
-
-  t-comm@1.5.14:
-    resolution: {integrity: sha512-OHYW6NoCDixVizQx7QqzRlvbhLRADeuc1Zy+03U9tjvhuA26e3TN8hFoeS98DUZz6t+E0mLmLA67TKul6hoEbw==}
-    hasBin: true
-
-  t-comm@1.5.15:
-    resolution: {integrity: sha512-HsW+SVLbgdMUQO9SaEWvm7QklJjKB1Q7Vv4CsKdg8kFzd98UoaQg9nlreLvqvfMNQN7zXSyMB00c376s19sO0A==}
-    hasBin: true
-
-  t-comm@1.5.24:
-    resolution: {integrity: sha512-oXEYGSxvAeYHLi0+XPlwHTxInfj+wJw1KdDB8Lyg73exM/RtQbXolMck7n8BvsbAnr2Z0HSxQCMCay4x/BeLEQ==}
-    hasBin: true
 
   t-comm@1.5.28:
     resolution: {integrity: sha512-FLmxGj3z4HRf07b22l6wsrKrUmBW/Ik+vwvgogbRoC9f9K5y42Vxg+Sq20UnOVJHYdChYu25WBsd1PObnIesBQ==}
@@ -11666,7 +11709,9 @@ snapshots:
       source-map: 0.6.1
       string-length: 2.0.0
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   '@jest/reporters@29.7.0':
     dependencies:
@@ -11917,7 +11962,7 @@ snapshots:
       '@plugin-light/webpack-plugin-modify-html': 0.0.4
       filemanager-webpack-plugin: 2.0.5
       prerender-spa-plugin: 3.4.0
-      t-comm: 1.5.14
+      t-comm: 1.5.28
       webpack-bundle-analyzer: 3.9.0
       webpack-hooks-shellscripts: 1.0.2
       workbox-webpack-plugin: 6.6.0(@types/babel__core@7.20.5)(webpack@4.47.0)
@@ -11940,7 +11985,7 @@ snapshots:
 
   '@plugin-light/shared@0.0.11':
     dependencies:
-      t-comm: 1.5.14
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
 
@@ -11949,7 +11994,7 @@ snapshots:
       '@plugin-light/shared': 0.0.11
       '@plugin-light/shared-vue2': 0.0.6(vue-template-compiler@2.6.10)
       loader-utils: 2.0.4
-      t-comm: 1.5.14
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
       - vue-template-compiler
@@ -11976,21 +12021,21 @@ snapshots:
   '@plugin-light/webpack-loader-publish@0.0.5':
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.5.14
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
 
   '@plugin-light/webpack-plugin-gen-version@0.0.5':
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.5.14
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
 
   '@plugin-light/webpack-plugin-modify-html@0.0.4':
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.5.14
+      t-comm: 1.5.28
     transitivePeerDependencies:
       - debug
 
@@ -12141,14 +12186,14 @@ snapshots:
     dependencies:
       '@babel/core': 7.26.0
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss@5.2.18)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@3.0.5)(postcss@7.0.39)
     transitivePeerDependencies:
       - supports-color
 
   '@stylelint/postcss-markdown@0.36.2(postcss-syntax@0.36.2)(postcss@7.0.39)':
     dependencies:
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss@5.2.18)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@3.0.5)(postcss@7.0.39)
       remark: 13.0.0
       unist-util-find-all-after: 3.0.2
     transitivePeerDependencies:
@@ -17003,6 +17048,13 @@ snapshots:
       domutils: 2.8.0
       entities: 2.2.0
 
+  htmlparser2@8.0.2:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.1.0
+      entities: 4.5.0
+
   htmlparser2@9.1.0:
     dependencies:
       domelementtype: 2.3.0
@@ -17916,7 +17968,9 @@ snapshots:
       pretty-format: 24.9.0
       throat: 4.1.0
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   jest-leak-detector@24.9.0:
     dependencies:
@@ -18340,6 +18394,8 @@ snapshots:
   js-tokens@3.0.2: {}
 
   js-tokens@4.0.0: {}
+
+  js-tokens@8.0.3: {}
 
   js-tokens@9.0.0: {}
 
@@ -19709,7 +19765,7 @@ snapshots:
       progress-bar-webpack-plugin: 2.1.0(webpack@4.47.0)
       rollup-plugin-visualizer: 5.12.0(rollup@2.79.2)
       script-ext-html-webpack-plugin: 2.1.5(html-webpack-plugin@4.5.2(webpack@4.47.0))(webpack@4.47.0)
-      t-comm: 1.5.14
+      t-comm: 1.5.28
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.18.5(rollup@2.79.2)
       unplugin-vue-components: 0.27.4(@babel/parser@7.26.2)(rollup@2.79.2)(vue@2.6.10)
@@ -19787,6 +19843,10 @@ snapshots:
       postcss: 7.0.39
       postcss-value-parser: 3.3.1
 
+  postcss-comment@2.0.0:
+    dependencies:
+      postcss: 6.0.23
+
   postcss-convert-values@4.0.1:
     dependencies:
       postcss: 7.0.39
@@ -19812,7 +19872,21 @@ snapshots:
     dependencies:
       htmlparser2: 3.10.1
       postcss: 7.0.39
-      postcss-syntax: 0.36.2(postcss@5.2.18)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@3.0.5)(postcss@7.0.39)
+
+  postcss-html@1.6.0:
+    dependencies:
+      htmlparser2: 8.0.2
+      js-tokens: 8.0.3
+      postcss: 8.4.49
+      postcss-safe-parser: 6.0.0(postcss@8.4.49)
+
+  postcss-import@16.1.0(postcss@7.0.39):
+    dependencies:
+      postcss: 7.0.39
+      postcss-value-parser: 4.2.0
+      read-cache: 1.0.0
+      resolve: 1.22.8
 
   postcss-less@3.1.4:
     dependencies:
@@ -19981,6 +20055,10 @@ snapshots:
     dependencies:
       postcss: 7.0.39
 
+  postcss-safe-parser@6.0.0(postcss@8.4.49):
+    dependencies:
+      postcss: 8.4.49
+
   postcss-sass@0.4.4:
     dependencies:
       gonzales-pe: 4.3.0
@@ -19989,6 +20067,10 @@ snapshots:
   postcss-scss@2.1.1:
     dependencies:
       postcss: 7.0.39
+
+  postcss-scss@3.0.5:
+    dependencies:
+      postcss: 8.4.49
 
   postcss-selector-parser@3.1.2:
     dependencies:
@@ -20012,9 +20094,12 @@ snapshots:
       postcss-value-parser: 3.3.1
       svgo: 1.3.2
 
-  postcss-syntax@0.36.2(postcss@5.2.18):
+  postcss-syntax@0.36.2(postcss-html@1.6.0)(postcss-scss@3.0.5)(postcss@7.0.39):
     dependencies:
-      postcss: 5.2.18
+      postcss: 7.0.39
+    optionalDependencies:
+      postcss-html: 1.6.0
+      postcss-scss: 3.0.5
 
   postcss-unique-selectors@4.0.1:
     dependencies:
@@ -20032,6 +20117,12 @@ snapshots:
       js-base64: 2.6.4
       source-map: 0.5.7
       supports-color: 3.2.3
+
+  postcss@6.0.23:
+    dependencies:
+      chalk: 2.4.2
+      source-map: 0.6.1
+      supports-color: 5.5.0
 
   postcss@7.0.39:
     dependencies:
@@ -20092,7 +20183,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  press-ui@3.0.13: {}
+  press-ui@3.0.17: {}
 
   prettier@2.8.8:
     optional: true
@@ -20275,6 +20366,10 @@ snapshots:
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
+
+  read-cache@1.0.0:
+    dependencies:
+      pify: 2.3.0
 
   read-pkg-up@1.0.1:
     dependencies:
@@ -21369,7 +21464,7 @@ snapshots:
       postcss-sass: 0.4.4
       postcss-scss: 2.1.1
       postcss-selector-parser: 6.1.2
-      postcss-syntax: 0.36.2(postcss@5.2.18)
+      postcss-syntax: 0.36.2(postcss-html@1.6.0)(postcss-scss@3.0.5)(postcss@7.0.39)
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
       slash: 3.0.0
@@ -21477,51 +21572,6 @@ snapshots:
   symbol-tree@3.2.4: {}
 
   systemjs@6.15.1: {}
-
-  t-comm@1.5.14:
-    dependencies:
-      '@babel/runtime': 7.26.0
-      '@commitlint/config-conventional': 17.8.1
-      axios: 0.21.4
-      cheerio: 1.0.0
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.13.1
-      request: 2.88.2
-      t-comm: 1.5.15
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
-
-  t-comm@1.5.15:
-    dependencies:
-      '@babel/runtime': 7.26.0
-      '@commitlint/config-conventional': 17.8.1
-      axios: 0.21.4
-      cheerio: 1.0.0
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.13.1
-      request: 2.88.2
-      t-comm: 1.5.24
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
-
-  t-comm@1.5.24:
-    dependencies:
-      '@babel/runtime': 7.26.0
-      '@commitlint/config-conventional': 17.8.1
-      axios: 0.21.4
-      cheerio: 1.0.0
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.13.1
-      request: 2.88.2
-      t-comm: 1.5.28
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
 
   t-comm@1.5.28:
     dependencies:

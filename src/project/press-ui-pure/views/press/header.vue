@@ -33,7 +33,7 @@
   </div>
 </template>
 <script>
-import PressIconPlus from '../../../../packages/press-icon-plus/press-icon-plus.vue';
+import PressIconPlus from 'press-ui/press-icon-plus/press-icon-plus.vue';
 
 export default {
   components: {
