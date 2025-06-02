@@ -1,6 +1,6 @@
 {
   "name": "press-ui-demo-vue2-pure",
-  "version": "3.0.13",
+  "version": "5.0.0",
   "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
   "homepage": "https://novlan1.github.io/press-ui-demo-vue2-pure",
@@ -56,7 +56,7 @@
     "path-browserify": "^1.0.1",
     "path-to-regexp": "2.4.0",
     "plugin-light": "^1.3.12",
-    "press-ui": "3.0.18",
+    "press-ui": "5.0.5",
     "qrcode": "^1.4.4",
     "qs": "^6.11.0",
     "safe-area-insets": "^1.4.1",
