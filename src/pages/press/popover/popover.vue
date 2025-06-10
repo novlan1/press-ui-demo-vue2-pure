@@ -50,7 +50,7 @@
         theme="dark"
         :actions="t('actions')"
         :get-container="getContainer"
-        placement="bottom"
+        placement="bottom-start"
         custom-style="z-index: 1;margin-left: 16px;"
         @select="onSelect"
       >
@@ -165,21 +165,6 @@
         @select="onSelect"
       >
         <template #default>
-          <!-- <press-grid
-            square
-            clickable
-            :border="false"
-            :column-num="3"
-            custom-style="width: 240px;"
-          >
-            <press-grid-item
-              v-for="i in 6"
-              :key="i"
-              icon="photo-o"
-              :text="t('option')"
-              @click="show.customContent = false"
-            />
-          </press-grid> -->
           <PressGrid
             :column-num="3"
             custom-style="width: 240px;"
@@ -202,6 +187,17 @@
         </template>
       </PressPopover>
     </demo-block>
+
+    <div
+      v-if="show.lightTheme
+        || show.darkTheme
+        || show.showIcon
+        || show.customContent
+        || show.disableAction
+      "
+      class="demo-overlay"
+      @click.stop="closeAllPopover"
+    />
   </div>
 </template>
 <script>
@@ -285,12 +281,12 @@ export default {
   data() {
     return {
       show: {
-        showIcon: false,
-        placement: false,
-        darkTheme: false,
         lightTheme: false,
-        customContent: false,
+        darkTheme: false,
+        placement: false,
+        showIcon: false,
         disableAction: false,
+        customContent: false,
       },
       showPicker: false,
       currentPlacement: 'top',
@@ -319,7 +315,32 @@ export default {
       return this.useGetContainer ? 'body' : '';
     },
   },
+  watch: {
+    'show.disableAction'() {
+      this.onCloseOthers('disableAction');
+    },
+    'show.lightTheme'() {
+      this.onCloseOthers('lightTheme');
+    },
+    'show.darkTheme'() {
+      this.onCloseOthers('darkTheme');
+    },
+    'show.customContent'() {
+      this.onCloseOthers('customContent');
+    },
+    'show.showIcon'() {
+      this.onCloseOthers('showIcon');
+    },
+  },
   methods: {
+    onCloseOthers(key) {
+      if (!this.show[key]) return;
+      Object.keys(this.show).forEach((item) => {
+        if (item !== key) {
+          this.show[item] = false;
+        }
+      });
+    },
     onPickerChange({ value, index }) {
       console.log('[onPickerChange]', value, index);
       setTimeout(() => {
@@ -343,6 +364,11 @@ export default {
     onClosed() {
       console.log('onClosed');
     },
+    closeAllPopover() {
+      Object.keys(this.show).forEach((key) => {
+        this.show[key] = false;
+      });
+    },
   },
 };
 </script>
@@ -362,5 +388,16 @@ export default {
     justify-content: center;
     margin: 110px 0;
   }
+}
+
+.demo-overlay {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

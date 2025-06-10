@@ -57,12 +57,14 @@
       <PressCell
         title="Normal"
         is-link
+        :value="normalCellValue"
         @click="onShowAreaPopup('')"
       />
 
       <PressCell
         title="E-Sport"
         is-link
+        :value="eSportCellValue"
         @click="onShowAreaPopup('e-sport')"
       />
     </demo-block>
@@ -167,7 +169,7 @@ export default {
       title3: '配置显示列',
       title4: '配置列占位提示文字',
       columnsPlaceholder: ['请选择', '请选择', '请选择'],
-      withPopup: '结合Popup',
+      withPopup: '搭配弹出层使用',
       popupTitle: '选择地区',
       parseData: '特殊处理数据',
       areaList: getAreaData,
@@ -196,6 +198,9 @@ export default {
       showPopup: false,
       selectArea: '',
       areaType: '',
+
+      normalCellValue: '',
+      eSportCellValue: '',
     };
   },
   mounted() {
@@ -226,21 +231,18 @@ export default {
       console.log('type', type);
       this.areaType = type || '';
     },
-    // onConfirmPopup() {
-    //   const values = this.$refs.pressArea?.getValues();
-    //   const index = this.$refs.pressArea?.getIndexes();
-    //   console.log('[onConfirmPopup] values index', values, index);
-
-    //   this.showPopup = false;
-    // },
     onCancelPopup() {
-      // this.showPopup = false;
     },
     onConfirmArea(values, index) {
       console.log('[onConfirmArea] values index', values, index);
       this.selectArea = values[values.length - 1]?.code;
       const names = values.map(item => item?.name || '').join('-');
       this.onGTip(`${this.selectArea}: ${names}`);
+      if (this.areaType) {
+        this.eSportCellValue = names;
+      } else {
+        this.normalCellValue = names;
+      }
     },
   },
 };

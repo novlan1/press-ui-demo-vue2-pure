@@ -62,21 +62,18 @@
     </demo-block>
 
     <demo-block
-      :title="t('withPopupPlus')"
-    >
-      <PressCell
-        :title="t('check')"
-        is-link
-        @click="onShowPopupPlus"
-      />
-    </demo-block>
-
-    <demo-block
       :title="t('withPopup')"
     >
       <PressCell
-        :title="t('functional')"
+        title="Normal"
         is-link
+        :value="normalCellValue"
+        @click="onShowPopupPlus"
+      />
+      <PressCell
+        title="E-Sport"
+        is-link
+        :value="eSportCellValue"
         @click="onShowFunctionalPicker"
       />
     </demo-block>
@@ -91,7 +88,6 @@
       :show="popupPlus.show"
       :datetime-picker="popupPlus.datetimePicker"
       :formatter="formatter"
-      :filter="filter"
       :close-on-click-overlay="popupPlus.closeOnClickOverlay"
       @cancel="popupPlus.show = false"
       @confirm="onConfirm"
@@ -114,6 +110,7 @@ import PressDatetimePicker from 'press-ui/press-datetime-picker/press-datetime-p
 let that;
 const DATE_TIME_PICKER_ID = 'press-picker-functional';
 const ONE_YEAR_MIL_SECONDS = 1000 * 60 * 60 * 24 * 365;
+const formatTime = time => `${timeStampFormat(time, 'yyyy-MM-dd hh:mm')}`;
 
 
 const getDayDesc = (val, day, innerValue) => {
@@ -169,8 +166,7 @@ export default {
       optionFilter: '选项过滤器',
       yearMonth: '年月合并',
       sortColumns: '自定义列排序',
-      withPopup: '结合Popup',
-      withPopupPlus: '结合 PopupPlus',
+      withPopup: '搭配弹出层使用',
       functional: '函数式调用',
     },
     'en-US': {
@@ -189,7 +185,6 @@ export default {
       yearMonth: 'Year With Month',
       sortColumns: 'Columns Order',
       withPopup: 'With Popup',
-      withPopupPlus: 'With PopupPlus',
       functional: 'Functional Mode',
     },
   },
@@ -239,6 +234,8 @@ export default {
           title: '选择时间',
         },
       },
+      normalCellValue: '',
+      eSportCellValue: '',
     };
   },
   methods: {
@@ -287,7 +284,7 @@ export default {
     },
     onInput(event) {
       this.currentDate = event;
-      this.onTip(`${timeStampFormat(event, 'yyyy-MM-dd hh:mm')}`);
+      this.onTip(formatTime(event));
     },
     onInputTime(event) {
       this.currentTime = event;
@@ -313,6 +310,7 @@ export default {
             that.onInput(event);
             inputValue = event;
             console.log('inputValue', inputValue);
+            that.eSportCellValue = formatTime(event);
           },
         },
       }).then((resp = {}) => {
@@ -343,6 +341,7 @@ export default {
       this.popupPlus.show = false;
       console.log('[confirm]', value);
       this.onInput(value);
+      this.normalCellValue = formatTime(value);
     },
   },
 };
